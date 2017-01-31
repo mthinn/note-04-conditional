@@ -24,8 +24,60 @@
         <!-- Add your site or application content here -->
         <?php 
         /* Write your PHP here */
+        /* php arrays are largely the same as javascriipt arrays however they have must be created useint the arrays () objects. and you cannot mix macth data types. */
+        $phpMyArray = array('Buick', 'Dodge', 'Toyota', 'Mazda');
+        echo $phpMyArray;[2];
+
+        $friendAge = array(
+            'Peter' => 56,
+            'Martha' => 76,
+            'Joe' => 31,
+            'Henery' => 21,
+            'Giselle' => 29,
+            'George' => 27,
+            'Ethel' => 82,
+            );
+        echo '<br>' . $friendAge['joe'];
+        /* when you are looping thought an associative array, you must use a foreach loop. the foreach loop states that each key in the assoiactive array, it will output the value associated or tied to that key. */
+
+        foreach ($friendAge as $x => $x_value) {
+            echo '<br>' . $x . '_' . $x_value;
+        }
+
+        $cats = array(
+                array('persian',34. 16),
+                array('raggamuffin', 12, 18),
+                array('siamese', 18, 17)
+               );
+        echo '<br>' . $cats[1][0];
+
+        for ($row = 0; $row  < 3; $row ++) { 
+            echo '<br>row:' . $row;
+                for ($col = 0; $col  < 3; $col++) { 
+                    echo '<br>' . $cats[$row][$col];
+                }
         
+
+
+
+
+
+
+        /* a FOR LOOP IS VERY COMMAN type of programming loop that is use on array to display all the elements at once.*/
+        for ($i = 0; $i < $phpMyArray; $i++){
+            echo '<br>' . $phpMyArray[$i];
+        } 
+
+
+
+
+
+
+
+
         ?> 
+
+    
 
            
 
